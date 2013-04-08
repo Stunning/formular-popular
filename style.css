@@ -1,0 +1,149 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+body {
+	text-align: center;
+	margin: 6% auto;
+	max-width: 1080px;
+	font: 150%/1.5 'EB Garamond', Georgia, serif;
+	color: #222;
+}
+
+h1 {
+	font: 300%/1.1 'Noto Sans', Arial, sans-serif;
+	font-weight: 900;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+}
+
+h1 span {
+	display: block;
+	font-size: 60%;
+	text-transform: none;
+}
+
+p {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	margin-top: 0.5em;
+}
+
+p.message {
+	color: #fff;
+	background: #2f9e09;
+	width: 50%;
+	margin: 0 auto;
+	border: 1px solid #2f9e09;
+	border-radius: 0.25em;
+	animation: fadein 1s;
+	-moz-animation: fadein 1s;
+	-webkit-animation: fadein 1s;
+}
+
+p.message.error {
+	background: #c73333;
+	border-color: #c73333;
+}
+
+input,
+textarea {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	font: 100%/1.5 'EB Garamond', Georgia, serif;
+	color: #222;
+	width: 50%;
+	text-align: center;
+	border: 1px solid #bbb;
+	box-shadow: inset 0 0 0.25em #bbb;
+	border-radius: 0.25em;
+}
+
+input.error,
+textarea.error {
+	border-color: #ef7676;
+	box-shadow: inset 0 0 0.25em #d63232;
+}
+
+input[required]:valid,
+textarea[required]:valid {
+	border-color: #2f9e09;
+	box-shadow: inset 0 0 0.25em #2f9e09;	
+}
+
+input.focused[required]:invalid,
+textarea.focused[required]:invalid {
+	border-color: #ef7676;
+	box-shadow: inset 0 0 0.25em #ef7676;	
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	min-width: 25%;
+	color: #fff;
+	font: 100%/1.5 'Noto Sans', Arial, sans-serif;
+	font-weight: 900;
+	border: 1px solid #181818;
+	-webkit-border-radius: 0.25em;
+	-moz-border-radius: 0.25em;
+	border-radius: 0.25em;
+	cursor: pointer;
+	background: #5c5c5c;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzVjNWM1YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYjFiMWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #5c5c5c 0%, #1b1b1b 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5c5c5c), color-stop(100%,#1b1b1b));
+	background: -webkit-linear-gradient(top,  #5c5c5c 0%,#1b1b1b 100%);
+	background: -o-linear-gradient(top,  #5c5c5c 0%,#1b1b1b 100%);
+	background: -ms-linear-gradient(top,  #5c5c5c 0%,#1b1b1b 100%);
+	background: linear-gradient(to bottom,  #5c5c5c 0%,#1b1b1b 100%);
+	-webkit-box-shadow: 1px 1px 3px 0px #000;
+	-moz-box-shadow: 1px 1px 3px 0px #000;
+	box-shadow: 1px 1px 3px 0px #000;
+}
+
+button:active {
+	background: #1b1b1b;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzVjNWM1YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxYjFiMWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #1b1b1b 0%, #5c5c5c 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1b1b1b), color-stop(100%,#5c5c5c));
+	background: -webkit-linear-gradient(top,  #1b1b1b 0%,#5c5c5c 100%);
+	background: -o-linear-gradient(top,  #1b1b1b 0%,#5c5c5c 100%);
+	background: -ms-linear-gradient(top,  #1b1b1b 0%,#5c5c5c 100%);
+	background: linear-gradient(to bottom,  #1b1b1b 0%,#5c5c5c 100%);
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+@keyframes fadein{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadein{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadein{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
